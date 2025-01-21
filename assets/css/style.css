@@ -144,7 +144,7 @@ body {
     height: 771px;
     background-image: url("../images/bg.png");
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-attachment: local;
     z-index: -1;
     margin-bottom: 60px;
@@ -266,7 +266,7 @@ body {
 /* STORY */
 .story-container {
     width: 100%;
-    background: url("../images/bg.png") no-repeat local center,
+    background: url("../images/bg.png") repeat-x local center,
     linear-gradient(0deg, rgba(254, 163, 1, 0.40) 0%, rgba(247, 247, 247, 1) 76%);
     background-size: cover;
     margin-bottom: 80px;
