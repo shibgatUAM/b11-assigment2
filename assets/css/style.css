@@ -144,9 +144,8 @@ body {
     height: 771px;
     background-image: url("../images/bg.png");
     background-position: center;
-    background-repeat: repeat-x;
+    background-repeat: repeat-y;
     background-attachment: local;
-    z-index: -1;
     margin-bottom: 60px;
 }
 
@@ -266,9 +265,8 @@ body {
 /* STORY */
 .story-container {
     width: 100%;
-    background: url("../images/bg.png") repeat-x local center,
-    linear-gradient(0deg, rgba(254, 163, 1, 0.40) 0%, rgba(247, 247, 247, 1) 76%);
-    background-size: cover;
+    background: url("../images/bg.png") repeat-y local center,
+    linear-gradient(0deg, rgba(254, 163, 1, 0.30) 0%, rgba(247, 247, 247, 1) 76%);
     margin-bottom: 80px;
 
     display: flex;
@@ -299,7 +297,7 @@ body {
 .card-1 {
     grid-row: 1 / span 3;
     width: 540px;
-    height: 630px;
+    height: 623px;
     background-color: var(--primarybg);
     border-radius: 16px;
     position: relative;
