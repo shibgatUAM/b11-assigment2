@@ -902,6 +902,7 @@ body {
         justify-content: end;
         row-gap: 20px;
         padding: 140px 140px;
+        margin-left: 10px;
     }
 }
 
