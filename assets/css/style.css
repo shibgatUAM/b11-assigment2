@@ -71,16 +71,32 @@ body {
     color: var(--orange);
 }
 
+#home-nav a:hover {
+    border-bottom: 3px solid var(--orange);
+}
+
 #about-nav a {
     color: var(--skyblue);
+}
+
+#about-nav a:hover {
+    border-bottom: 3px solid var(--skyblue);
 }
 
 #fa-nav a {
     color: #05D4DF;
 }
 
+#fa-nav a:hover {
+    border-bottom: 3px solid #05D4DF;
+}
+
 #adms-nav a {
     color: #5D58EF;
+}
+
+#adms-nav a:hover {
+    border-bottom: 3px solid #5D58EF;
 }
 
 .btn {
@@ -92,6 +108,13 @@ body {
     font-weight: 600;
     border: none;
     border-radius: 12px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 2px solid var(--orange);
+    color: var(--orange);
+    background-color: var(--white);
 }
 
 /* BANNER */
@@ -135,6 +158,14 @@ body {
     border-radius: 12px;
     color: var(--primarybg);
     font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.banner-btn:hover {
+    border: 2px solid var(--black);
+    color: var(--black);
+    background-color: var(--white);
+    font-weight: 700;
 }
 
 /* CURRICULUM */
@@ -172,6 +203,13 @@ body {
     height: 476px;
     padding: 40px;
     border-radius: 19px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.column-kinder:hover, .column-elementary:hover, .column-middle:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
 }
 
 .kinder-image {
@@ -220,6 +258,10 @@ body {
     padding-top: 38px;
 }
 
+.kinder-btn:hover {
+    border-bottom: 2px solid #64C8FF;
+}
+
 .elementary-btn {
     text-decoration: none;
     color: #F0AA00;
@@ -229,6 +271,10 @@ body {
     padding-top: 38px;
 }
 
+.elementary-btn:hover {
+    border-bottom: 2px solid #F0AA00;
+}
+
 .middle-btn {
     text-decoration: none;
     color: #8700FF;
@@ -236,6 +282,10 @@ body {
     font-weight: 700;
     display: inline-block;
     padding-top: 38px;
+}
+
+.middle-btn:hover {
+    border-bottom: 2px solid #8700FF;
 }
 
 .angle {
@@ -259,6 +309,16 @@ body {
     align-items: center;
     font-size: 2rem;
     cursor: pointer;
+}
+
+.angle-left:hover, .angle-right:hover {
+    transform: scale(1.2) rotate(10deg);
+    color: var(--black);
+}
+
+.angle-left:active, .angle-right:active {
+    transform: scale(1.1) rotate(-5deg);
+    color: var(--black);
 }
 
 /* STORY */
@@ -474,8 +534,15 @@ body {
     cursor: pointer;
 }
 
+.view-btn:hover {
+    border: 2px solid var(--black);
+    color: var(--black);
+    background-color: var(--white);
+}
+
 /* FOOTER */
 .footer-container {
+    width: 100%;
     background-color: var(--skyblue);
 }
 
@@ -530,6 +597,11 @@ body {
     color: var(--white);
 }
 
+.footer-nav-list a:hover {
+    color: var(--black);
+    font-weight: 700;
+}
+
 .footer-social-media {
     font-size: 1.5rem;
     font-weight: 700;
@@ -562,7 +634,7 @@ body {
 }
 
 .social-icons a:hover {
-    opacity: 0.8; /* Optional: Slight opacity change on hover */
+    color: var(--black);
 }
 
 
