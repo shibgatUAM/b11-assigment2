@@ -34,7 +34,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 140px;
-    /*background-color: var(--primarybg);*/
 }
 
 .logo-container {
@@ -265,9 +264,9 @@ body {
 /* STORY */
 .story-container {
     width: 100%;
-    background: url("../images/bg.png") repeat-y local center,
+    background: url("../images/bg.png") repeat-y local center top,
     linear-gradient(0deg, rgba(254, 163, 1, 0.30) 0%, rgba(247, 247, 247, 1) 76%);
-    margin-bottom: 80px;
+    /*margin-bottom: 80px;*/
 
     display: flex;
     flex-direction: column;
@@ -472,4 +471,101 @@ body {
     margin-bottom: 60px;
     font-size: 1.25rem;
     font-weight: 700;
+    cursor: pointer;
 }
+
+/* FOOTER */
+.footer-container {
+    background-color: var(--skyblue);
+}
+
+.row-footer {
+    width: 1040px;
+    display: grid;
+    grid-template-columns: 400px 160px 180px;
+    align-items: start;
+    justify-content: space-around;
+    column-gap: 200px;
+    padding: 140px 140px;
+}
+
+.footer-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 35px;
+}
+
+.footer-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.footer-description {
+    font-size: 1.2rem;
+    color: var(--white);
+}
+
+.footer-nav-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 32px;
+}
+
+.footer-nav-list {
+
+}
+
+.footer-nav-list li {
+    list-style: none;
+    margin-bottom: 30px;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.footer-nav-list a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.footer-social-media {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.footer-social-media h4 {
+    margin-bottom: 32px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.facebook {
+    color: #FFFFFF;
+}
+
+.twitter {
+    color: #FFFFFF;
+}
+
+.linkedin {
+    color: #FFFFFF;
+}
+
+.instagram {
+    color: #FFFFFF;
+}
+
+.social-icons a:hover {
+    opacity: 0.8; /* Optional: Slight opacity change on hover */
+}
+
+
+
+
+
