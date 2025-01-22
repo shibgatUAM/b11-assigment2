@@ -643,7 +643,7 @@ body {
 
 
 /* Mobile responsive */
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 400px) and (max-width: 576px) {
     .temporary-hide {
         display: none;
     }
@@ -658,7 +658,7 @@ body {
     }
 
     .header-container {
-        width: 390px;
+        width: 100%;
         height: 70px;
         display: flex;
         flex-direction: row;
