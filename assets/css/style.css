@@ -174,7 +174,7 @@ body {
 /* CURRICULUM */
 .curriculum-container {
     width: 100%;
-    height: 771px;
+    /*height: 771px;*/
     background-image: url("../images/bg.png");
     background-position: center;
     background-repeat: repeat-y;
@@ -643,7 +643,7 @@ body {
 
 
 /* Mobile responsive */
-@media screen and (min-width: 100px) and (max-width: 576px) {
+@media screen and (min-width: 360px) and (max-width: 576px) {
     .temporary-hide {
         display: none;
     }
@@ -721,6 +721,9 @@ body {
     }
 
 /*  CURRICULUM */
+/*    .curriculum-container {*/
+/*        height: 0;*/
+/*    }*/
     .curriculum-title {
         font-size: 1.5rem;
         font-weight: 700;
@@ -762,6 +765,143 @@ body {
     .middle-paragraph {
         font-size: 0.94rem;
         font-weight: 500;
+    }
+
+    .angle {
+        display: none;
+    }
+
+/*  STORY CONTAINER  */
+    .card-1 {
+        display: none;
+    }
+
+    .row-story {
+        width: 400px;
+        margin: 0 auto;
+        display: grid;
+        gap: 45px;
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 20px;
+    }
+
+    .card-2, .card-3, .card-4, .card-5 {
+        width: 175px;
+        height: 179px;
+        background-color: var(--primarybg);
+        border-radius: 5px;
+        position: relative;
+    }
+
+    .story-image {
+        width: 175px;
+        height: 105px;
+    }
+
+    .card-2 .story-image {
+        margin-bottom: 10px;
+    }
+
+    .card-3 .story-image {
+        margin-bottom: 10px;
+    }
+
+    .card-4 .story-image {
+        margin-bottom: 10px;
+    }
+    .card-5 .story-image {
+        margin-bottom: 10px;
+    }
+
+    .card-2 .story-btn {
+        width: 103px;
+        height: 22px;
+        border-radius: 47px;
+        border: none;
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: var(--white);
+        position: absolute;
+        top: 95px;
+        left: 35px;
+    }
+
+    .card-3 .story-btn {
+        width: 103px;
+        height: 22px;
+        border-radius: 47px;
+        border: none;
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: var(--white);
+        position: absolute;
+        top: 95px;
+        left: 35px;
+    }
+
+    .card-4 .story-btn {
+        width: 103px;
+        height: 22px;
+        border-radius: 47px;
+        border: none;
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: var(--white);
+        position: absolute;
+        top: 95px;
+        left: 35px;
+    }
+
+    .card-5 .story-btn {
+        width: 103px;
+        height: 22px;
+        border-radius: 47px;
+        border: none;
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: var(--white);
+        position: absolute;
+        top: 95px;
+        left: 35px;
+    }
+
+    .card-2 .story-subtitle {
+        font-size: 0.8rem;
+        font-weight: 700;
+        padding: 5px;
+    }
+
+    .card-3 .story-subtitle {
+        font-size: 0.8rem;
+        font-weight: 700;
+        padding: 5px;
+    }
+
+    .card-4 .story-subtitle {
+        font-size: 0.8rem;
+        font-weight: 700;
+        padding: 5px;
+    }
+
+    .card-5 .story-subtitle {
+        font-size: 0.8rem;
+        font-weight: 700;
+        padding: 5px;
+    }
+
+/* FOOTER */
+    .footer-container {
+        width: 100%;
+    }
+
+    .row-footer {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        align-items: start;
+        justify-content: end;
+        row-gap: 20px;
+        padding: 140px 140px;
     }
 }
 
