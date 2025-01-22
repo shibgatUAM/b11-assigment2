@@ -27,7 +27,6 @@ body {
 
 /* HEADER */
 .header-container {
-    width: 100%;
     margin: 0 auto;
     height: 102px;
     display: flex;
@@ -115,6 +114,10 @@ body {
     border: 2px solid var(--orange);
     color: var(--orange);
     background-color: var(--white);
+}
+
+.menu-icon {
+    display: none;
 }
 
 /* BANNER */
@@ -637,6 +640,130 @@ body {
     color: var(--black);
 }
 
+
+
+/* Mobile responsive */
+@media screen and (max-width: 576px) {
+    .temporary-hide {
+        display: none;
+    }
+    /* HEADER PART */
+    .logo-container h1, .navbar, .contact-btn {
+        display: none;
+    }
+
+    .logo-container {
+        display: block;
+        text-align: left;
+    }
+
+    .header-container {
+        width: 390px;
+        height: 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid var(--orange);
+        padding: 0;
+        margin: 0;
+    }
+
+    .logo img {
+        width: 46px;
+        height: 46px;
+        margin-left: 5px;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 2rem;
+        margin-right: 25px;
+    }
+
+    /* BANNER PART */
+    .banner-container {
+        width: 357px;
+        display: flex;
+        gap: 20px;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .banner-img img {
+        width: 320px;
+        height: 410px;
+    }
+
+    .banner-title-container {
+        text-align: center;
+    }
+
+    .banner-title {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: inherit;
+    }
+
+    .banner-paragraph {
+        font-size: 0.87rem;
+        font-weight: 500;
+        margin-bottom: 18px;
+    }
+
+    .banner-btn {
+        width: 131px;
+        height: 41px;
+    }
+
+/*  CURRICULUM */
+    .curriculum-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        width: 261px;
+        height: 33px;
+        margin-bottom: 50px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        width: 357px;
+        margin: 8px;
+    }
+
+    .column-kinder, .column-elementary, .column-middle {
+        flex: 0 1 357px;
+        height: 321px;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    .kinder-image, .elementary-image, .middle-image {
+        width: 120px;
+        height: 110px;
+        padding-top: 30px;
+    }
+
+    .kinder-title, .elementary-title, .middle-title {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    .kinder-paragraph, .elementary-paragraph {
+        font-size: 0.84rem;
+        font-weight: 500;
+    }
+
+    .middle-paragraph {
+        font-size: 0.94rem;
+        font-weight: 500;
+    }
+}
 
 
 
